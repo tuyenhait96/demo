@@ -1,17 +1,19 @@
 // libs
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
 import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
 // others
 import 'antd/dist/antd.css';
 import './App.css';
 import './index.css';
+import Image from "./components/Image/Image";
+import Menu from "./components/Menu/Menu"
 
 const { Header, Content, Footer, Sider } = Layout;
 
 function App() {
   return (
     <Layout>
-      <Sider
+      {/* <Sider
         breakpoint="lg"
         collapsedWidth="0"
         onBreakpoint={broken => {
@@ -45,7 +47,9 @@ function App() {
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
-      </Layout>
+      </Layout> */}
+      {/* <Image /> */}
+      <Menu />
     </Layout>
   );
 }
